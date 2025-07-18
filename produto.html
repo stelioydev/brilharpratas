@@ -1,98 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Brilhar Pratas</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo | Brilhar Pratas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div class="top-bar">
-       <a href="sobre.html" style="color: inherit; text-decoration: underline;"><strong>Sobre nós</strong></a>
-        <span>Confira informações sobre cuidado com as joias no nosso blog!</span>
-    </div>
-    <div class="logo-search">
-      <img id="imagem-logo" src="img/logo-topo.jpg" alt="Brilhar Pratas" class="logo" />
-      <input type="text" placeholder="Pesquisar..." class="search-input" />
-        <div class="icones-principal">
-  <img src="img/cadastro.png" alt="Usuário" class="icone" />
-  <img src="img/icon-carrinho.png" alt="Carrinho" class="icone" />
-</div>
-    </div>
-    <nav class="main-nav">
-      <a href="index.html">Início</a>
-      <a href="catalago.html">Catálogo</a>
-      <a href="#" class="active">Blog</a>
-    </nav>
-  </header>
-  <!-- Conteúdo principal -->
-  <main class="produto-detalhe">
-    <div class="container-produto">
-      <img src="img/1.jpg" alt="Anel Solitário em prata 925">
-      
-      <div class="produto-info">
-        <h1>Anel Solitário</h1>
-        <p class="preco">R$ 89,90</p>
-        <p class="descricao">
-          Joia delicada em prata 925, ideal para todas as ocasiões. Acompanha certificado de garantia e embalagem para presente.
-        </p>
 
-        <label for="quantidade">Quantidade:</label>
-        <input type="number" id="quantidade" name="quantidade" min="1" value="1" />
+    <header>
+        <div class="top-bar">
+            <a href="sobre.html" style="color: inherit; text-decoration: underline;"><strong>Sobre nós</strong></a>
 
-        <button class="btn-comprar">Adicionar à Sacola</button>
-      </div>
-    </div>
-  </main>
- <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Institucional</h4>
-        <a href="#">Sobre nós</a>
-        <a href="#">Política de Privacidade</a>
-        <a href="#">Termos de Uso</a>
-      </div>
-      <div class="footer-section">
-        <h4>Atendimento</h4>
-        <a href="#">Fale Conosco</a>
-        <a href="#">Trocas e Devoluções</a>
-        <a href="#">Pagamento e Frete</a>
-        <a href="#">Garantia</a>
-      </div>
-      <div class="footer-section">
-        <h4>Categorias</h4>
-        <a href="#">Anéis</a>
-        <a href="#">Brincos</a>
-        <a href="#">Colares</a>
-        <a href="#">Pulseiras</a>
-      </div>
-      <div class="footer-section">
-        <h4>Siga-nos</h4>
-        <a href="https://instagram.com/brilharpratas" target="_blank">
-          <img src="img/logo-instagram.jpg" alt="Instagram" class="social-icon" />
-          @brilharpratas
-        </a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="formas-pagamento">
-        <h4>Formas de Pagamento</h4>
-        <div class="pagamento-icons">
-          <img src="img/pix.png" alt="Pix" />
-          <img src="img/elo.png" alt="Elo" />
-          <img src="img/visa.png" alt="Visa" />
+            <span>Confira informações sobre cuidado com as joias no nosso blog!</span>
         </div>
-      </div>
-      <p>&copy; 2025 Brilhar Pratas. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+        <div class="logo-search">
+            <img id="imagem-logo" src="img/logo-topo.jpg" alt="Brilhar Pratas" class="logo" />
+            <input type="text" placeholder="Pesquisar..." class="search-input" />
+            <div class="icones-principal">
+                <img src="img/cadastro.png" alt="Usuário" class="icone" />
+                <img src="img/icon-carrinho.png" alt="Carrinho" class="icone" />
+            </div>
 
-  <a href="https://wa.me/5500000000000" class="whatsapp-button" target="_blank" aria-label="Fale conosco no WhatsApp">
-    <img src="img/whatsapp-icon.png" alt="WhatsApp" />
-  </a>
+        </div>
+        <nav class="main-nav">
+            <a href="#">Início</a>
+            <a href="catalago.html">Catálogo</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-produto">
+            <div class="menu-imagem-produto">
+                <div class="menu-imagem-produto" id="imagem-produto-cima"></div>
+                <div class="menu-imagem-produto" id="imagem-produto-meio"></div>
+                <div class="menu-imagem-produto" id="imagem-produto-baixo"></div>
+            </div>
+            <div class="imagem-produto"><img src="img/pulseira.jpg" alt="Pulseira com detalhe em zircônia"></div>
+            <div class="informacoes-produto">
+                <p id="nome-produto">Pulseira com Zircônia</p>
+                <p id="descricao-produto">Pulseira de zircônia delicada em prata 925.</p>
+                <p id="valor-produto">R$ 109,90</p>
+                <form id="form-produto" action="">
+                    <label id="label-quantidade-produto" for="quantidade-produto">Quantidade:</label>
+                    <div class="inputNumber">
+                        <button onclick="addValue()">
+                            <span>+</span>
+                        </button>
+                        <input type="number" name="quantidade-produto" id="quantidade-produto" step="1" min="1"
+                            value="0">
+                        <button onclick="subtractValue()">
+                            <span>-</span>
+                        </button>
+
+                    </div>
+                    <button id="botao-comprar"><a href="#">ADICIONAR A SACOLA</a></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const inputNumber = document.querySelector(".inputNumber input")
+
+        const addValue = () => {
+            inputNumber.value = Number(inputNumber.value) + 1;
+        }
+
+        const subtractValue = () => {
+            inputNumber.value = Number(inputNumber.value) - 1;
+        }
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Institucional</h4>
+                <a href="#">Sobre nós</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+            <div class="footer-section">
+                <h4>Atendimento</h4>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Trocas e Devoluções</a>
+                <a href="#">Pagamento e Frete</a>
+                <a href="#">Garantia</a>
+            </div>
+            <div class="footer-section">
+                <h4>Categorias</h4>
+                <a href="#">Anéis</a>
+                <a href="#">Brincos</a>
+                <a href="#">Colares</a>
+                <a href="#">Pulseiras</a>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <a href="https://instagram.com/brilharpratas" target="_blank">
+                    <img src="img/logo-instagram.jpg" alt="Instagram" class="social-icon" />
+                    @brilharpratas
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="formas-pagamento">
+                <h4>Formas de Pagamento</h4>
+                <div class="pagamento-icons">
+                    <img src="img/pix.png" alt="Pix" />
+                    <img src="img/elo.png" alt="Elo" />
+                    <img src="img/visa.png" alt="Visa" />
+                </div>
+            </div>
+            <p>&copy; 2025 Brilhar Pratas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5500000000000" class="whatsapp-button" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp" />
+    </a>
 
 </body>
+
 </html>
